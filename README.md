@@ -6,7 +6,7 @@
 | Mirza Rifai Dhiaurrahman | 5025241205 | C |
 
 ## Knight’s Tour Solver (Warnsdorff + Backtracking)
-Program ini mencari jalur Knight’s Tour pada papan catur 8×8, baik open tour maupun closed tour, menggunakan gabungan heuristik Warnsdorff dan backtracking. Pengguna dapat memilih titik awal (x, y) dan memilih jenis tour yang ingin dicari.
+Program ini mencari jalur Kuda pada papan catur 8×8, baik open tour maupun closed tour. Program menggunakan gabungan heuristik Warnsdorff dan backtracking untuk mencari rute yang mengunjungi seluruh kotak pada papan. Pengguna dapat memilih titik awal (x, y) dan memilih jenis tour yang ingin dicari.
 
 ### Cara Menggunakan Program
 1. Jalankan file Python:
@@ -25,9 +25,9 @@ python knightTour.py
 ### Alur Kerja Program
 1. Inisialisasi papan
    - Papan berukuran 8×8 diisi dengan nilai -1 (belum dikunjungi).
-   - Titik awal diisi 0.
+   - Titik awal diisi 0 (posisi pertama).
 2. Pemilihan langkah menggunakan Warnsdorff
-   - Untuk posisi saat ini, program menghitung semua langkah knight yang valid.
+   - Untuk posisi saat ini, program menghitung semua langkah valid yang dimiliki kuda.
    - Setiap kandidat langkah diberi nilai degree (jumlah langkah lanjutan yang tersedia).
    - Daftar langkah diurutkan dari degree paling kecil ke paling besar.
    - Cara ini memperkecil kemungkinan macet di akhir.
@@ -36,7 +36,7 @@ python knightTour.py
    - Jika buntu, program mundur ke langkah sebelumnya dan mencoba jalur lain.
 4. Pemeriksaan jenis tour
    - Jika open, jalur selesai saat semua 64 petak terkunjungi.
-   - Jika closed, langkah terakhir harus bisa kembali ke posisi awal dengan gerakan knight.
+   - Jika closed, langkah terakhir harus bisa kembali ke posisi awal dengan gerakan kuda.
 5. Output
    - Jika tour ditemukan, program mencetak papan 8×8 berisi urutan langkah (0–63).
    - Jika tidak ditemukan, program menampilkan pesan bahwa tour tidak tersedia dari posisi tersebut.
