@@ -43,4 +43,5 @@ Pada program ini, kita diminta untuk mencari subsequence paling panjang dari sua
 5. Output semua LIS
    Program mengoutput seluruh subsequence terpanjang
 
-   ![image]()
+   ![image](<img width="485" height="131" alt="image" src="https://github.com/user-attachments/assets/f82843f1-670c-4c3c-9eb3-c92b4c7d97bf" />
+)
