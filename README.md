@@ -44,3 +44,5 @@ Pada program ini, kita diminta untuk mencari subsequence paling panjang dari sua
    Program mengoutput seluruh subsequence terpanjang
 
 <img width="485" height="131" alt="image" src="https://github.com/user-attachments/assets/f82843f1-670c-4c3c-9eb3-c92b4c7d97bf" />
+
+[CODE](https://github.com/notdoppi/Final-Praktikum-Tegraf-C/blob/1c2bb71cb0dfb9162474bb724d7f0b961ddca6a2/LIS.py)
