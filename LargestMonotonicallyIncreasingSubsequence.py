@@ -4,7 +4,7 @@ class Node:
         self.children = []
 
 def build_tree(arr, index):
-    """Bangun tree dari arr[index] dengan children = elemen yang lebih besar di kanan."""
+# membuat tree dari arr[index] dengan children = elemen yang lebih besar di kanan
     root = Node(arr[index])
 
     for next_index in range(index + 1, len(arr)):
@@ -16,7 +16,7 @@ def build_tree(arr, index):
 
 
 def find_all_LIS_from_node(node, current_seq):
-    """Kumpulkan semua subsequence terpanjang dari node tertentu."""
+# mengumpulkan semua subsequence terpanjang dari node tertentu
     current_seq.append(node.value)
 
     if not node.children:
@@ -39,7 +39,7 @@ def find_all_LIS_from_node(node, current_seq):
 
 
 def find_all_LIS(arr):
-    """Bangun tree dari setiap root, ambil SEMUA LIS yang panjang maksimum."""
+# Membuat tree dari setiap root lalu ambil semua LIS yang panjangnya maksimum
     global_best = []
     global_len = 0
 
