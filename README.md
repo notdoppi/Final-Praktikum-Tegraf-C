@@ -4,3 +4,8 @@
 | ---            | ---        | ----------|
 | Dwinanda Rakhish Baley | 5025241198 | C |
 | Mirza Rifai Dhiaurrahman | 5025241205 | C |
+
+
+## Knight's Problem
+
+## Largest Monotonically Increasing Subsequence
